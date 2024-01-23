@@ -1,1 +1,1 @@
-# Python-Mega-Course
+# Python-Django
