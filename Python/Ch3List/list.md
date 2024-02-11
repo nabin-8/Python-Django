@@ -78,4 +78,40 @@ I have Oolong tea
 'Lemon'
 >>> tea_varities       
 ['Black', 'Green', 'Oolong', 'White']
+
+tea_varities.remove("Green")
+>>> tea_varities
+['Black', 'Oolong', 'White']
+
+>>> tea_varities.insert(1,"Green")
+>>> tea_varities
+['Black', 'Green', 'Oolong', 'White']
+
+
+//copy
+>>> tea_varities_copy=tea_varities.copy()
+>>> tea_varities_copy
+['Black', 'Green', 'Oolong', 'White']
+
+//append
+>>> tea_varities_copy.append("Lemon")
+>>> tea_varities_copy
+['Black', 'Green', 'Oolong', 'White', 'Lemon']
+>>> tea_varities
+['Black', 'Green', 'Oolong', 'White']
+
+//range
+>>> squard_nums = [x**2 for x in range(10)] 
+>>> range(10)
+range(0, 10)
+>>> y= range(10)
+>>> y
+range(0, 10)
+
+>>> squard_nums                            
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+>>> cube_number=[y**3 for y in range(5)] 
+>>> cube_number 
+[0, 1, 8, 27, 64]
 ```
