@@ -33,5 +33,5 @@ def formatted_details(name, age, profession):
 
 name=input("Enter your name:")
 age=input("Enter your age:")
-profession=input("Enter your profession:")
-print(formatted_details(name, age, profession))
+profession=input("Enter your profession:  ")
+print(formatted_details(name, age, profession)) 
