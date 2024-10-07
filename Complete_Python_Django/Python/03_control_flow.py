@@ -52,8 +52,8 @@ good_credit=True
 
 # for else
 # break => break is used to terminate the loop
-for number in range(1,10):
-    print("Hello")
+# for number in range(1,10):
+#     print("Hello")
 
 # Exercise 1
 # Print prime number from 1-10
@@ -63,3 +63,41 @@ for number in range(1,10):
 #         count+=1
 #         print(x)
 # print(f"We have {count} even numbers")
+
+# Control-Flow Exercise
+""" 
+1. Write a program that compares two numbers, a = 10 and b = 20, using different comparison operators (==, !=, <, >, <=, >=). Print the results for each comparison. Explain what comparison operators are and how they are used in control flow.
+"""
+def comparison():
+    while True:
+        print("To quit q, Q: ")
+        print("To continue y, Y: ")
+        program=input(":")
+        if(program.lower()=='q'):
+            break
+        else:
+            a=int(input("\nEnter a first argument: "))
+            b=int(input("Enter a second argument: "))
+            print("\n")
+            print("c = compare\ng = greater\nl = less\nn = !")
+            comp=input(":")
+            if comp.lower()=='c':
+                print(f"\n{a == b}\n")
+            elif comp.lower()=='g':
+                print(f"\n{a > b}\n")
+            elif comp.lower()=='l':
+                print(f"\n{a < b}\n")
+            elif comp.lower()=='n':
+                print(f"\n{a != b}\n")
+            else:
+                print("\nEnter valid string\n")
+
+# comparison()
+
+# qn2
+""" 
+Write a Python script that assigns a value to a variable result using the ternary operator. If x = 5, set result to "Even" if x is even and "Odd" if x is odd. Discuss how Python's ternary operator (<expression_if_true> if <condition> else <expression_if_false>) works and when it's useful.
+"""
+# x=int(input("Enter the number: "))
+# print("Even number") if x%2==0 else print("Odd number")
+
