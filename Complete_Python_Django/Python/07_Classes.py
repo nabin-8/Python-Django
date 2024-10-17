@@ -150,7 +150,48 @@ class FileStream(Stream):
 class NetworkStream(Stream):
     def read(self):
         print("Reading data from a network")
-        
 
-stream=Stream()
-stream.open
+# Abstract base classes
+class MemoryStream(Stream):
+    def read(self):
+        print("Reding data from a memory stream")
+
+
+# stream=MemoryStream()
+# # stream=Stream()
+# stream.open
+
+# Polymorphism
+class UIControl(ABC):
+    @abstractmethod
+    def draw(self):
+        pass
+    
+class TextBox(UIControl):
+    def draw(self):
+        print("textbox ")
+        
+        
+class DropDownList(UIControl):
+    def draw(self):
+        print("DropDownList ")
+        
+def draw(controls):
+    for control in controls:
+        control.draw()
+    
+# ddl=DropDownList()
+# textbox=TextBox()
+# # print(isinstance(ddl, UIControl))
+# draw([ddl, textbox])
+
+
+
+# Extending Built-in Types
+class Text(str):
+    def duplicate(self):
+        return self +' '+ self
+    
+
+text=Text("Python")
+print(text.duplicate())
