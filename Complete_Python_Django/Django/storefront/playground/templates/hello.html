@@ -15,6 +15,8 @@
 <ul>
     {% for product in products%}
     <li>{{ product.title }}</li>
+    {% comment %} <li>{{ product }}</li> {% endcomment %}
+    {% comment %} <li>{{ product.title }} - {{ product.collection.title }}</li> {% endcomment %}
     {% endfor %}
 </ul>
 </body>
